@@ -1,16 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Header } from "./Header";
 import { LoginForm } from "./LoginForm";
+import { Home } from "./components/Home";
+import { SignUpForm } from "./components/register/SignUpForm";
 
 function App() {
   return (
-    <div className="bg-gray-400 grid place-content-center min-h-screen flex flex-col ">
-      <Header />
-      <LoginForm />
-      <footer className="text-center ">
-        &copy;2025 M.Mubashir72. All rights reserved.
-      </footer>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/signup" element={<SignUpForm />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

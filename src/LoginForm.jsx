@@ -1,6 +1,7 @@
 import "./index.css";
 import image from "./assets/images.png";
-
+import { Link } from "react-router-dom";
+// import { SignUpForm } from "./components/register/SignUpForm";
 export const LoginForm = () => {
   return (
     <section>
@@ -36,9 +37,9 @@ export const LoginForm = () => {
         <p>
           Don&#39;t have an account?
           <span>
-            <a className="text-blue-500" href="">
+            <Link className="text-blue-500" to="/signup">
               Sign Up
-            </a>
+            </Link>
           </span>
         </p>
         <span>
