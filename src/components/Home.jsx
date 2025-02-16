@@ -3,7 +3,7 @@ import { LoginForm } from "../LoginForm";
 
 export const Home = () => {
   return (
-    <div className="bg-gray-400 grid place-content-center min-h-screen flex flex-col ">
+    <div className="bg-gray-400  min-h-screen">
       <Header />
       <LoginForm />
       <footer className="text-center ">
