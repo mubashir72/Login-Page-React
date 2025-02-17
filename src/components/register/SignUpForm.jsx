@@ -16,10 +16,6 @@ export const SignUpForm = () => {
           required
         />
 
-        {/* <label className="label">
-          <b>Password</b>
-        </label> */}
-
         <input
           className="input mb-2"
           type="password"
