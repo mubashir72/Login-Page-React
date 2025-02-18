@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -9,7 +10,7 @@ import { getAuth } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 //const apikey = process.env.REACT_APP_API_KEY;
 const firebaseConfig = {
-  apiKey: "AIzaSyAZ4iIkEz5ceuXIctTglYW0kYLrkln5A0E",
+  apiKey: import.meta.env.VITE_APP_API_KEY,
   authDomain: "login-webpage-3ef56.firebaseapp.com",
   projectId: "login-webpage-3ef56",
   storageBucket: "login-webpage-3ef56.firebasestorage.app",

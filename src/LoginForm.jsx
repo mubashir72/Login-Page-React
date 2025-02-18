@@ -10,12 +10,12 @@ import {
   getAuth,
 } from "firebase/auth";
 import { app } from "./firebase/firebase";
-// import { SignUpForm } from "./components/register/SignUpForm";
 export const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const auth = getAuth(app);
   const navigate = useNavigate();
+
   const HandleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -42,6 +42,7 @@ export const LoginForm = () => {
 
   return (
     <section className="grid place-content-center  flex flex-col">
+      {/* <p>{console.log(import.meta.env.VITE_APP_API_KEY)}</p> */}
       <div className=" p-3 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl grid place-content-center pt-5 pb-5 rounded-4xl bg-white mt-8 mb-8 ">
         <form onSubmit={HandleLogin}>
           <h2 className="text-2xl pb-5 font-bold">Log In</h2>
